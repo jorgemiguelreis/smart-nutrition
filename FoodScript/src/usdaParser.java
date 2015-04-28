@@ -59,7 +59,7 @@ public class usdaParser {
 		//StringBuilder s = new StringBuilder();
 
 		PrintWriter out = new PrintWriter("output.xml", "UTF-8");
-		
+		out.println("<foods>");
 		//String result = "";
 		for(Integer i = 10000;i < 16000; i++) {
 			String ndbo = String.format("%05d", i);
@@ -75,6 +75,7 @@ public class usdaParser {
 				out.println(writer.toString());
 			}
 		}
+		out.println("</foods>");
 		out.close();
 		//Source text = new StreamSource(s.toString());
 
