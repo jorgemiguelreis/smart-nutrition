@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+    <header class="header black-bg">
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"/>
+        </div>
+            <!--logo start-->
+        <a href="index.html" class="logo">
+            <b>
+                <span class="light">S</span>mart <span class="light">N</span>utrition</b>
+        </a>
+            <!--logo end-->
+        <div class="top-menu">
+            <ul class="nav pull-right top-menu">
+                <li>
+                    <a class="logout" href="index.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+              <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <p class="centered">
+                    <a href="profile.html">
+                        <img src="resources/img/avatar.png" class="img-circle" width="60"/>
+                    </a>
+                </p>
+                <h5 class="centered">Username</h5>
+                <li class="mt">
+                    <a href="dashboard.html">
+                        <i class="fa fa-dashboard"/>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="mt">
+                    <a class="active" href="plans.html">
+                        <i class="fa fa-file-o"/>
+                        <span>Plans</span>
+                    </a>
+                </li>
+                <li class="mt">
+                    <a href="antro.html">
+                        <i class="fa fa-heart"/>
+                        <span>Anthropometric Data</span>
+                    </a>
+                </li>
+                <li class="mt">
+                    <a href="search.html">
+                        <i class="fa fa-search"/>
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li class="mt">
+                    <a href="index.html">
+                        <i class="fa fa-power-off"/>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+              <!-- sidebar menu end-->
+        </div>
+    </aside>
+      <!--sidebar end-->
+    <section id="main-content">
+        <section class="wrapper site-min-height">
+            <h3>
+                <i class="fa fa-angle-right"/> New plan</h3>
+            <div class="row mt">
+                <div class="col-lg-12">
+                    <label for="usr">Name:</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="newplanname"/>
+                </div>
+                <div class="col-lg-2">
+                    <button onclick="createPlan()" class="btn btn-info btn-block">Create </button>
+                </div>
+                <div class="col-md-12">
+                    <h3 id="createdplan"/>
+                </div>
+                <div style="clear:both"/>
+                <div id="createnewmeal" style="display:none; border-top: 1px solid black;">
+                    <div class="col-lg-12">
+                        <h3>
+                            <i class="fa fa-angle-right"/> Create a new meal</h3>
+                        <label for="usr">Meal name:</label>
+                    </div>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="mealName"/>
+                    </div>
+                    <div class="col-lg-12" style="margin-top:10px">
+                        <label for="usr">Hour to make the meal (format HH:mm)</label>
+                    </div>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="mealHour"/>
+                    </div>
+                    <div class="col-lg-2">
+                        <button onclick="createNewMeal()" class="btn btn-info btn-block">Create </button>
+                    </div>
+                    <div class="col-md-12">
+                        <h3 id="msgMeal"/>
+                    </div>
+                </div>
+                <div style="clear:both"/>
+                <div id="createdmeals"/>
+                <div class="col-lg-12" id="showfoods" style="display:none">
+                    <h2> Search for foods</h2>
+                    <div class="row mt">
+                        <div class="col-lg-12">
+                            <div class="content-panel">
+                                <table id="example" class="display" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Info</th>
+                                            <th>Add to Meal</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Info</th>
+                                            <th>Add to Meal</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody class="app:loadAllFoad"/>
+                                </table>
+                            </div><!-- /content-panel -->
+                        </div><!-- /col-lg-4 -->
+                    </div><!-- /row -->
+                </div>
+            </div>
+        </section>
+    </section><!-- /MAIN CONTENT -->
+    <style>
+        .mealcreated:not(:first-child){
+            border-top: 1px solid black;
+        }
+    </style>
+    <script type="text/javascript">
+        function createPlan(){
+            planName = $("#newplanname").val();
+                $("#createdplan").empty();
+            if(planName === ""){
+                $("#createdplan").append("Error: Please fill the plan's name!");
+            }else {
+                insertPlan(planName);
+                $("#createdplan").append("Plan " + planName + " was created!");
+                $("#createnewmeal").show();
+            }
+        }
+        
+        function insertPlan(planName) {
+            url = "insertPlan.html?name="+planName;
+            $.ajax(url, {
+                    data: { start: planName },
+                    
+                });
+       } 
+        
+        function createNewMeal(){
+            mealName = $("#mealName").val();
+            mealHour = $("#mealHour").val();
+            
+            $("#msgMeal").empty();
+            if(mealName === "" || mealHour === ""){
+                $("#msgMeal").append("Error: Please fill both fields!");
+            }else {
+                insertMeal(mealName);
+                $("#msgMeal").append("Meal " + mealName + " was created to eat at " + mealHour+ "!");
+                $("#showfoods").show();
+            }
+        }
+        
+        function insertMeal(mealName) {
+            
+            query = "name=" + mealName;
+            
+            url = "insertMeal.html?" + query;
+            $.ajax(url, {
+                    data: { start: planName },
+                    
+                });
+        }
+        
+        function insertFood(id) {
+            uery = "id=" + id;
+            
+            url = "insertFood.html?" + query;
+            $.ajax(url, {
+                    data: { start: planName },
+                    
+                });
+        }
+    </script>
+    <script type="text/javascript">
+          $(document).ready(function() {
+             $('#example').DataTable({
+                 responsive: true,
+                 "bLengthChange": false,
+             });
+          });
+      </script>
+</div>

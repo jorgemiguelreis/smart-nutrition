@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user>
+    <userID> 01 </userID>
+    <password>qqqqqqqq</password>
+    <name>
+        <firstName> Nelson </firstName>
+        <surName> Pereira </surName>
+    </name>
+    <gender>Male</gender>
+    <birthday> 1-11-1991</birthday>
+    <objective> Lose Weight</objective>
+    <registers>
+        <register>
+            <id> 1 </id>
+            <date>26-03-2015</date>
+            <weight unit="Kg">79</weight>
+            <height unit="m">1.79</height>
+            <IMC>24.7</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>2</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.79</height>
+            <IMC>24.96801</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>3</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.79</height>
+            <IMC>24.96801</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>4</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.79</height>
+            <IMC>24.96801</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>5</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.79</height>
+            <IMC>24.96801</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>6</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.79</height>
+            <IMC>24.96801</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>7</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.79</height>
+            <IMC>24.96801</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>8</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.79</height>
+            <IMC>24.96801</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>9</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">73</weight>
+            <height unit="m">1.79</height>
+            <IMC>22.78331</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>10</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">100</weight>
+            <height unit="m">1.79</height>
+            <IMC>31.210012</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>11</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">69</weight>
+            <height unit="m">1.74</height>
+            <IMC>22.790329</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>12</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">90</weight>
+            <height unit="m">2</height>
+            <IMC>22.5</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>13</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.79</height>
+            <IMC>24.96801</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>14</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">75</weight>
+            <height unit="m">1.79</height>
+            <IMC>23.40751</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>15</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">50</weight>
+            <height unit="m">1.79</height>
+            <IMC>15.605006</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>16</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">60</weight>
+            <height unit="m">1.9</height>
+            <IMC>16.620499</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>17</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">75</weight>
+            <height unit="m">3</height>
+            <IMC>8.333333</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>18</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.5</height>
+            <IMC>35.555557</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>19</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.5</height>
+            <IMC>35.555557</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>20</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">100</weight>
+            <height unit="m">1.81</height>
+            <IMC>30.524101</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>21</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">78</weight>
+            <height unit="m">1.85</height>
+            <IMC>22.790358</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>22</id>
+            <date>2015-06-03-04:00</date>
+            <weight unit="Kg">100</weight>
+            <height unit="m">1.79</height>
+            <IMC>31.210012</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>23</id>
+            <date>2015-06-04-04:00</date>
+            <weight unit="Kg">80</weight>
+            <height unit="m">1.8</height>
+            <IMC>24.69136</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+        <register>
+            <id>24</id>
+            <date>2015-06-04-04:00</date>
+            <weight unit="Kg">78</weight>
+            <height unit="m">1.81</height>
+            <IMC>23.8088</IMC>
+            <activityLevel>Medium</activityLevel>
+        </register>
+    </registers>
+    <mealPlans>
+        <mealPlan>
+            <id>1</id>
+            <name>Dieta</name>
+            <meals>
+                <meal name="breakfast">
+                    <id>1</id>
+                    <hour> 8:00 </hour>
+                    <food measure="oz">
+                        <id>01004</id>
+                        <qt> 10 </qt>
+                    </food>
+                    <food measure="jar">
+                        <id>03210</id>
+                        <qt> 20 </qt>
+                    </food>
+                </meal>
+                <meal name="dinner">
+                    <id>2</id>
+                    <hour> 20:00 </hour>
+                    <food measure="cup">
+                        <id>04546</id>
+                        <qt> 10 </qt>
+                    </food>
+                    <food measure="jar">
+                        <id>03210</id>
+                        <qt> 20 </qt>
+                    </food>
+                </meal>
+            </meals>
+        </mealPlan>
+        <mealPlan>
+            <id>2</id>
+            <name>Cal?rico</name>
+            <meals>
+                <meal name="breakfast">
+                    <id>1</id>
+                    <hour> 8:00 </hour>
+                    <food measure="oz">
+                        <id>01004</id>
+                        <qt> 100 </qt>
+                    </food>
+                    <food measure="jar">
+                        <id>03210</id>
+                        <qt> 520 </qt>
+                    </food>
+                </meal>
+                <meal name="dinner">
+                    <id>2</id>
+                    <hour> 20:00 </hour>
+                    <food measure="cup">
+                        <id>04546</id>
+                        <qt> 10 </qt>
+                    </food>
+                    <food measure="jar">
+                        <id>03210</id>
+                        <qt> 20 </qt>
+                    </food>
+                </meal>
+            </meals>
+        </mealPlan>
+        <mealPlan>
+            <id>3</id>
+            <name>Bulkup</name>
+            <meals>
+                <meal name="breakfast">
+                    <id>1</id>
+                    <hour> 8:00 </hour>
+                    <food measure="oz">
+                        <id>01004</id>
+                        <qt> 100 </qt>
+                    </food>
+                    <food measure="jar">
+                        <id>03210</id>
+                        <qt> 520 </qt>
+                    </food>
+                </meal>
+                <meal name="lunch">
+                    <id>1</id>
+                    <hour> 12:00 </hour>
+                    <food measure="oz">
+                        <id>01004</id>
+                        <qt> 100 </qt>
+                    </food>
+                </meal>
+                <meal name="dinner">
+                    <id>2</id>
+                    <hour> 20:00 </hour>
+                    <food measure="cup">
+                        <id>04546</id>
+                        <qt> 10 </qt>
+                    </food>
+                    <food measure="jar">
+                        <id>03210</id>
+                        <qt> 20 </qt>
+                    </food>
+                </meal>
+            </meals>
+        </mealPlan>
+        <mealPlan>
+            <id>4</id>
+            <name>My new awesome plan</name>
+            <meals>
+                <meal name="Tea">
+                    <id>1</id>
+                    <hour> 16:00 </hour>
+                </meal>
+            </meals>
+        </mealPlan>
+    </mealPlans>
+</user>
