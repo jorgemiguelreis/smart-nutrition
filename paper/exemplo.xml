@@ -1,0 +1,58 @@
+<users>
+ <user>
+  <userID> 01 </userID>
+   <name>
+    <firstName> Nelson </firstName>
+    <surName> Pereira </surName>
+   </name>
+  <gender>Male</gender>
+  <birthday> 1-11-1991</birthday>
+  <registers>
+   <register>
+    <date>26-03-2015</date>
+    <weight unit='Kg'>79</weight>
+    <height unit='m'>1.79</height>
+    <IMC>24,7</IMC>
+    <activityLevel>Medium</activityLevel>
+   </register>
+   <register>
+    ...
+   </register>
+  </registers>
+
+  <mealPlans>
+   <mealPlan dateStart='26-03-2015' dateEnd='2-04-2015'>
+    <day date='26-03-2015'>
+    <meals>
+     <meal hour='08h00' type='breakfast'>
+      <food>
+       <id>301</id>
+        <qt> 10 </qt>
+      </food>
+      <food>
+       <id>496</id>
+       <qt> 20 </qt>
+      </food>
+     </meal>
+     <meal>
+      ...
+     </meal>
+    </meals>
+    </day>
+
+    <day>
+     ...
+    </day>
+  </mealPlan>
+  
+  <mealPlan>
+   ...
+  </mealPlan>
+ </mealPlans>
+ </user>
+
+ <user>
+  ...
+ </user>
+ 
+</users>

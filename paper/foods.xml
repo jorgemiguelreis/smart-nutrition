@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foods>
+   <food>
+      <id>01001</id>
+      <name>Butter, salted</name>
+      <measures>
+         <measure label="cup">
+            <nutrient nutrient_id="203">
+               <name>Protein</name>
+               <value unit="g">0.85</value>
+               <group>Proximates</group>
+            </nutrient>
+            <nutrient nutrient_id="204">
+               <name>Total lipid (fat)</name>
+               <value unit="g">81.11</value>
+               <group>Proximates</group>
+            </nutrient>
+         </measure>
+      </measures>
+   </food>
+</foods>

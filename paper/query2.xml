@@ -1,0 +1,21 @@
+for $i in fn:doc("../results.xml")//foods/food
+ where(
+  $i/id/text() eq $id
+  )
+ return 
+ (
+  for $measure in ($i/measures/measure)
+  return
+  (
+   for $nutrient in $aux/nutrient
+   return
+   (
+    <tr>
+     <td>{xs:string($measure/@label)}</td>
+     <td>{xs:string($nutrient/name)}</td>
+     <td>{xs:string($nutrient/value)}{xs:string(" ")}{xs:string($nutrient/value/@unit)}</td>
+     <td>{xs:string($nutrient/group)}</td>
+    </tr>
+   )
+  )
+ )

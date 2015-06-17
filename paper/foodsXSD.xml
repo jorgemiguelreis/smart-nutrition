@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="foods">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="food" maxOccurs="unbounded">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name="id" type="xs:string" />
+       <xs:element name="name" type="xs:string" />
+       <xs:element name="measures">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="measure" maxOccurs="unbounded">
+           <xs:complexType>
+            <xs:sequence>
+             <xs:element name="nutrient" maxOccurs="unbounded">
+              <xs:complexType>
+               <xs:sequence>
+                <xs:element name="name" type="xs:string" maxOccurs="1" />
+                <xs:element name="value" maxOccurs="1">
+                 <xs:complexType>
+                  <xs:simpleContent>
+                   <xs:extension base="xs:double">
+                    <xs:attribute name="unit" type="xs:string" use="required" /> </xs:extension>
+                  </xs:simpleContent>
+                 </xs:complexType>
+                </xs:element>
+                <xs:element name="group" type="xs:string" maxOccurs="1" /> </xs:sequence>
+               <xs:attribute name="nutrient_id" type="xs:string" use="required" /> </xs:complexType>
+             </xs:element>
+            </xs:sequence>
+            <xs:attribute name="label" type="xs:string" use="required" /> </xs:complexType>
+          </xs:element>
+         </xs:sequence>
+        </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+</xs:schema>

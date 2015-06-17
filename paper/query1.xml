@@ -1,0 +1,11 @@
+for $i in fn:doc("../results.xml")//foods/food
+ where(
+  fn:contains(fn:upper-case($i/name/text()), fn:upper-case($query))
+  )
+ return 
+ (
+   <tr>
+       <td>{$i/name/text()}</td>
+       <td><a type="button" class="btn btn-round btn-info" href="details.html?id={$i/id/text()}">More Info</a></td>
+   </tr>
+ )

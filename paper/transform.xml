@@ -1,0 +1,22 @@
+<xsl:for-each-group select=".[@ndbno=$ndbno]/nutrients/nutrient/measures/measure" group-by="@label">
+ <xsl:sort select="@label" order="ascending" />
+ <measure>
+  <xsl:attribute name="label">
+   <xsl:value-of select="@label" /> </xsl:attribute>
+  <xsl:for-each-group select="../../../..[@ndbno=$ndbno]/nutrients/nutrient" group-by="@nutrient_id">
+   <xsl:sort select="@nutrient_id" order="ascending" />
+   <nutrient>
+    <xsl:attribute name="nutrient_id">
+     <xsl:value-of select="@nutrient_id" /> </xsl:attribute>
+    <name>
+     <xsl:value-of select="@name" /> </name>
+    <value>
+     <xsl:attribute name="unit">
+      <xsl:value-of select="@unit" /> </xsl:attribute>
+     <xsl:value-of select="@value" /> </value>
+    <group>
+     <xsl:value-of select="@group" /> </group>
+   </nutrient>
+  </xsl:for-each-group>
+ </measure>
+</xsl:for-each-group>
